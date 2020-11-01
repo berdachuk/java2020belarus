@@ -1,0 +1,23 @@
+# GIT ignore settings
+
+*.iml
+
+*.log
+*.log.gz
+
+target/
+*.class
+
+## Directory-based site format:
+.idea/
+
+## File-based site format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+# mpeltonen/sbt-idea plugin
+.idea_modules/
