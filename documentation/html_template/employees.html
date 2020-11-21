@@ -30,7 +30,9 @@
             <li class="nav-item">
                 <a href="employee.html"
                    class="btn btn-light"
-                   title="Add Employee">
+                   title="Add Employee"
+                   data-toggle="tooltip"
+                   data-placement="bottom">
                     <img src="img/icons/plus.svg" alt="+"/><span class="d-none d-sm-inline">Add</span>
                 </a>
             </li>
@@ -60,10 +62,14 @@
                             <td class="text-right">
                                 <a href="employee.html"
                                    class="btn-sm btn-outline-secondary"
-                                   title="Edit employee">
+                                   title="Edit employee"
+                                   data-toggle="tooltip"
+                                   data-placement="top">
                                     <img src="img/icons/pen.svg"><span class="d-none d-md-inline">&nbsp;Edit</span></a>
                                 <a href="#" class="btn-sm btn-outline-secondary"
-                                   title="delete department"><img src="img/icons/x.svg"><span class="d-none d-md-inline">&nbsp;Delete</span>
+                                   title="delete department"
+                                   data-toggle="tooltip"
+                                   data-placement="top"><img src="img/icons/x.svg"><span class="d-none d-md-inline">&nbsp;Delete</span>
                                 </a>
                             </td>
                         </tr>
@@ -74,10 +80,14 @@
                             <td class="text-right">
                                 <a href="employee.html"
                                    class="btn-sm btn-outline-secondary"
-                                   title="Edit employee">
+                                   title="Edit employee"
+                                   data-toggle="tooltip"
+                                   data-placement="top">
                                     <img src="img/icons/pen.svg"><span class="d-none d-md-inline">&nbsp;Edit</span></a>
                                 <a href="#" class="btn-sm btn-outline-secondary"
-                                   title="delete department"><img src="img/icons/x.svg"><span class="d-none d-md-inline">&nbsp;Delete</span>
+                                   title="delete department"
+                                   data-toggle="tooltip"
+                                   data-placement="top"><img src="img/icons/x.svg"><span class="d-none d-md-inline">&nbsp;Delete</span>
                                 </a>
                             </td>
                         </tr>
@@ -96,5 +106,10 @@
 
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>

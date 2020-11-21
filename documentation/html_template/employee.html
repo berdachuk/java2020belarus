@@ -27,7 +27,9 @@
          class="pl-1 py-1 mb-3 navbar navbar-expand-sm navbar-light bg-light text-dark">
         <ul class="navbar-nav float-lg-left">
             <li class="nav-item"
-                title="Back to list">
+                title="Back to list"
+                data-toggle="tooltip"
+                data-placement="bottom">
                 <a href="employees.html" class="btn btn-light btn-block"><img src="img/icons/arrow-left.svg" alt="Back"/></a>
             </li>
         </ul>
@@ -65,10 +67,14 @@
                             <div class="d-flex justify-content-end">
                                 <a href="employees.html"
                                    class="btn btn-light mr-1"
-                                   title="Cancel">Cancel</a>
+                                   title="Cancel"
+                                   data-toggle="tooltip"
+                                   data-placement="top">Cancel</a>
                                 <a href="employees.html"
                                    class="btn btn-primary"
-                                   title="Save employee">Save</a>
+                                   title="Save employee"
+                                   data-toggle="tooltip"
+                                   data-placement="top">Save</a>
                             </div>
                         </form>
                     </div>
@@ -85,5 +91,10 @@
 
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
