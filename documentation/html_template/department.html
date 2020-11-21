@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Departments</title>
 </head>
 <body>
@@ -25,30 +26,40 @@
     <nav id="main-header"
          class="pl-1 py-1 mb-3 navbar navbar-expand-sm navbar-light bg-light text-dark">
         <ul class="navbar-nav float-lg-left">
-            <li class="nav-item"  title="Back to list">
-            <a href="departments.html" class="btn btn-light btn-block">
-                <img src="img/icons/arrow-left.svg" alt="Back"/></a>
+            <li class="nav-item" title="Back to list">
+                <a href="departments.html" class="btn btn-light btn-block">
+                    <img src="img/icons/arrow-left.svg" alt="Back"/></a>
             </li>
         </ul>
         <span class="navbar-brand text-uppercase">Edit department</span>
     </nav>
 </header>
 
-<section>
-    <form>
-        <div>
-            <label for="field_departmentName">Department Name</label>
-            <input id="field_departmentName" type="text" value="CEO"/>
+<section id="department">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div>
+                                <label for="field_departmentName">Department Name</label>
+                                <input id="field_departmentName" type="text" value="CEO"/>
+                            </div>
+                            <div>
+                                <label for="field_description">Description</label>
+                                <input id="field_description" type="text" value="CEO department">
+                            </div>
+                            <div>
+                                <a href="departments.html">Cancel</a>
+                                <a href="departments.html">Save</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="field_description">Description</label>
-            <input id="field_description" type="text" value="CEO department">
-        </div>
-        <div>
-            <a href="departments.html">Cancel</a>
-            <a href="departments.html">Save</a>
-        </div>
-    </form>
+    </div>
 </section>
 
 <footer>
