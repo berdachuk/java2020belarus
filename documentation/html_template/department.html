@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Departments</title>
 </head>
 <body>
 
 <header>
-    <h1>Departments</h1>
+    <nav class="pl-2 navbar navbar-expand-sm navbar-dark bg-dark text-light p-1">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="navbar-brand"><img src="img/logo.svg" height="32" width="32" alt="HR"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <a class="nav-item nav-link active" href="departments.html">Departments</a>
+                <a class="nav-item nav-link" href="employees.html">Employees</a>
+            </ul>
+        </div>
+    </nav>
+    <nav id="main-header"
+         class="pl-1 py-1 mb-3 navbar navbar-expand-sm navbar-light bg-light text-dark">
+        <ul class="navbar-nav float-lg-left">
+            <li class="nav-item" title="Back to list"
+                data-toggle="tooltip"
+                data-placement="bottom">
+                <a href="departments.html" class="btn btn-light btn-block">
+                    <img src="img/icons/arrow-left.svg" alt="Back"/></a>
+            </li>
+        </ul>
+        <span class="navbar-brand text-uppercase">Edit department</span>
+    </nav>
 </header>
 
-<section>
-    <form>
-        <div>
-            <label for="field_departmentName">Department Name</label>
-            <input id="field_departmentName" type="text" value="CEO"/>
+<section id="department">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-control-label"
+                                       for="field_departmentName">Department Name</label>
+                                <input class="form-control "
+                                       id="field_departmentName"
+                                       type="text" value="CEO"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label"
+                                       for="field_description">Description</label>
+                                <input class="form-control"
+                                       id="field_description"
+                                       type="text" value="CEO department">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <a href="departments.html"
+                                   class="btn btn-light mr-1"
+                                   title="Cancel"
+                                   data-toggle="tooltip"
+                                   data-placement="top">Cancel</a>
+                                <a href="departments.html"
+                                   class="btn btn-primary"
+                                   title="Save employee"
+                                   data-toggle="tooltip"
+                                   data-placement="top">Save</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="field_description">Description</label>
-            <input id="field_description" type="text" value="CEO department">
-        </div>
-        <div>
-            <a href="departments.html">Cancel</a>
-            <a href="departments.html">Save</a>
-        </div>
-    </form>
+    </div>
 </section>
 
 <footer>
     <hr/>
-    <p>&copy; 2020</p>
+    <p class="text-center">&copy; Siarhei Berdachuk 2020</p>
 </footer>
+
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
